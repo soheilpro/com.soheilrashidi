@@ -2,61 +2,51 @@
 <html>
   <head>
     <title>Soheil Rashidi</title>
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
-    <meta http-equiv="imagetoolbar" content="false" />
-    <meta name="MSSmartTagsPreventParsing" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.min.js"></script>
-    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <style>
       * { padding: 0; margin: 0; }
-      body { background-color: #333; }
-      h1 { color: #fff; font-family: 'Lato', serif; font-size: 24px; line-height: 26px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
-      p { color: #fff; font-family: 'Lato', serif; font-size: 18px; line-height: 26px; margin-bottom: 22px; -webkit-font-smoothing: antialiased; }
-      a { color: #fff; font-weight: bold; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
-      a:hover { border-bottom: 1px solid rgba(255,255,255,1); }
-      #logo { width: 50px; padding: 50px 0 0 0; margin: 0 auto 0 50px; }
-      #about { width: 360px; padding: 0 0 0 150px; margin: -35px 50px 0 auto !important; }
-      @media (max-width: 767px) {
-        #mask { position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); }
-        #logo { position: relative; width: auto; padding: 20px; margin: 0; }
-        #about { position: relative; width: auto; padding: 20px; margin: 0 !important; }
-        background-image { opacity: 0.2; }
+      html { height: 100%; }
+      body { height: 100%; background-color: #222; color: #eee; font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 1.8em; letter-spacing: .1em; text-transform: uppercase; }
+      a { color: #eee; text-decoration: none; }
+      a:hover { border-bottom: 1px solid #666; }
+      #container { width: 100%; height: 80%; }
+      #container td { text-align: center; vertical-align: middle; }
+      #avatar { width: 60px; height: 60px; border-width: 2px; border-style: solid; border-color: #ddd; border-radius: 40px; }
+      #name { margin-top: 5px; font-size: 1em; color: #666; }
+      #links { margin-top: 30px; }
+      #links .divider { color: #666; padding-left: 2px; padding-right: 2px; }
+
+      @media (max-width: 480px) {
+        #links a { display: block; }
+        #links .divider { display: none; }
       }
     </style>
   </head>
   <body>
-    <div id="mask"></div>
-    <div id="logo">
-      <img src="images/logo.png" />
-    </div>
-    <div id="about">
-      <h1>
-        I am Soheil Rashidi.
-      </h1>
-      <p>
-        I design and develop applications for mobile and web.
-         And when I'm not doing that I work out, read and watch movies.
-      </p>
-      <p>
-        I publish my code on <a href="https://github.com/soheilpro">GitHub</a>;
-        dump my mind on <a href="http://twitter.com/soheilpro">Twitter</a>;
-        share the photos I take on <a href="http://instagram.com/soheilpro">Instagram</a>;
-        track the music I listen to on <a href="http://www.last.fm/user/soheilpro">Last.fm</a>;
-        and ask and answer questions on <a href="http://www.quora.com/Soheil-Rashidi">Quora</a>.
-      </p>
-    </div>
+    <table id='container'>
+      <tr>
+        <td>
+          <div>
+            <img src='http://s.gravatar.com/avatar/c321266e6a277cc511d1353a6cb3b086?size=800' id='avatar' />
+          </div>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
-    $(function() {
-      $(window).resize(function() {
-        $.backstretch("images/background.jpg", {speed: 150});
-      })
-      .resize();
-    });
-    </script>
+          <h1 id='name'>Soheil Rashidi</h1>
+
+          <div id='links'>
+            <a href='https://github.com/soheilpro'>GitHub</a>
+            <span class='divider'>&bull;</span>
+            <a href='http://twitter.com/soheilpro'>Twitter</a>
+            <span class='divider'>&bull;</span>
+            <a href='http://instagram.com/soheilpro'>Instagram</a>
+            <span class='divider'>&bull;</span>
+            <a href='https://open.spotify.com/user/1219191128'>Spotify</a>
+            <span class='divider'>&bull;</span>
+            <a href='http://www.last.fm/user/soheilpro'>Last.fm</a>
+          </div>
+        </div>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
