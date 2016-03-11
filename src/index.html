@@ -8,7 +8,7 @@
       * { padding: 0; margin: 0; }
       html { height: 100%; }
       body { height: 100%; background-color: #222; color: #eee; font-family: 'Open Sans', sans-serif; font-size: 12px; line-height: 1.8em; letter-spacing: .1em; text-transform: uppercase; }
-      a { color: #eee; text-decoration: none; }
+      a { color: #eee; text-decoration: none; border-bottom: 1px solid transparent; }
       a:hover { border-bottom: 1px solid #666; }
       #container { width: 100%; height: 80%; }
       #container td { text-align: center; vertical-align: middle; }
@@ -18,7 +18,7 @@
       #links .divider { color: #666; padding-left: 2px; padding-right: 2px; }
 
       @media (max-width: 480px) {
-        #links a { display: block; }
+        #links .link { display: block; }
         #links .divider { display: none; }
       }
     </style>
@@ -34,15 +34,25 @@
           <h1 id='name'>Soheil Rashidi</h1>
 
           <div id='links'>
-            <a href='https://github.com/soheilpro'>GitHub</a>
+            <span class="link">
+              <a href='https://github.com/soheilpro'>GitHub</a>
+            </span>
             <span class='divider'>&bull;</span>
-            <a href='http://twitter.com/soheilpro'>Twitter</a>
+            <span class="link">
+              <a href='http://twitter.com/soheilpro'>Twitter</a>
+            </span>
             <span class='divider'>&bull;</span>
-            <a href='http://instagram.com/soheilpro'>Instagram</a>
+            <span class="link">
+              <a href='http://instagram.com/soheilpro'>Instagram</a>
+            </span>
             <span class='divider'>&bull;</span>
-            <a href='https://open.spotify.com/user/1219191128'>Spotify</a>
+            <span class="link">
+              <a href='https://open.spotify.com/user/1219191128'>Spotify</a>
+            </span>
             <span class='divider'>&bull;</span>
-            <a href='http://www.last.fm/user/soheilpro'>Last.fm</a>
+            <span class="link">
+              <a href='http://www.last.fm/user/soheilpro'>Last.fm</a>
+            </span>
           </div>
         </div>
         </td>
