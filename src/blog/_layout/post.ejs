@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title><%= post.title %> | Soheil Rashidi</title>
+    <%- include('../../_layout/head') %>
+    <link rel="alternate" type="application/rss+xml" title="Soheil Rashidi's Blog" href="/blog/feed.xml"/>
+  </head>
+  <body>
+    <%- include('../../_layout/header') %>
+
+    <h1 class="h1"><%= post.title %></h1>
+    <br />
+
+    <div class="blog-post-body"><%- post.html %></div>
+    <br />
+
+    <div class="text-stone-800">&mdash; <%= post.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %></div>
+
+    <br /><br />
+
+    <div>Subscribe via <a href="/blog/feed.xml" class="link">RSS</a> or follow me on <a href="https://twitter.com/soheilpro" class="link" target="_blank">Twitter</a> to get notifited of my new posts.</div>
+
+    <%- include('../../_layout/footer') %>
+  </body>
+</html>

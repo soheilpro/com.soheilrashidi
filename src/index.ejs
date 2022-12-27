@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Soheil Rashidi</title>
+    <%- include('./_layout/head') %>
+  </head>
+  <body>
+    <%- include('./_layout/header') %>
+
+    <div>I am an <a href="https://www.whatisanindiemaker.com" target="_blank" class="link">Indie Maker</a>. My products are used by 1.9M+ people.</div>
+
+    <div class="h-16"></div>
+
+    <h2 class="h2">Products</h2>
+    <ul>
+      <li><a href="https://volt.fm" class="link" target="_blank">volt.fm</a> — Spotify on steroids</li>
+      <li><a href="https://pikaso.me" class="link" target="_blank">Pikaso</a> — Professional Twitter screenshots</li>
+      <li><a href="https://postsheet.com" class="link-dead" target="_blank">PostSheet</a> (Acquired)</li>
+      <li><a href="https://rippd.app" class="link-dead" target="_blank">Rippd</a> (Acquired)</li>
+    </ul>
+
+    <div class="h-16"></div>
+
+    <div class="h2 flex items-center">
+      <h2><a href="/blog" class="link-simple">Blog</a></h2>
+      <a href="/blog/feed.xml" class="link ml-3 text-sm !font-bold">RSS</a>
+    </div>
+    <ul>
+    <% for (const post of context.data.blog.posts) { %>
+      <li><a href="<%= post.url %>" class="link"><%= post.title %></a></li>
+    <% } %>
+    </ul>
+
+    <div class="h-16"></div>
+
+    <h2 class="h2">Links</h2>
+    <ul>
+      <li><a href="http://twitter.com/soheilpro" class="link" target="_blank">Twitter</a></li>
+      <li><a href="http://instagram.com/soheilpro" class="link" target="_blank">Instagram</a></li>
+      <li><a href="https://github.com/soheilpro" class="link" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/soheilpro" class="link" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.indiehackers.com/soheilpro" class="link" target="_blank">Indie Hackers</a></li>
+      <li><a href="https://www.producthunt.com/@soheilpro" class="link" target="_blank">Product Hunt</a></li>
+      <li><a href="https://volt.fm/soheilpro" class="link" target="_blank">volt.fm</a></li>
+    </ul>
+
+    <div class="h-16"></div>
+
+    <h2 class="h2">Contact</h2>
+    <div><a href="mailto:contact@soheilrashidi.com" class="link">contact@soheilrashidi.com</a></div>
+
+    <%- include('./_layout/footer') %>
+  </body>
+</html>

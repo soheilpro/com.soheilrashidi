@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Blog | Soheil Rashidi</title>
+    <%- include('../_layout/head') %>
+    <link rel="alternate" type="application/rss+xml" title="Soheil Rashidi's Blog" href="/blog/feed.xml"/>
+  </head>
+  <body>
+    <%- include('../_layout/header') %>
+
+    <h1 class="h1">Blog</h1>
+    <br />
+
+    <ul>
+      <% for (const post of context.data.blog.posts) { %>
+        <li><a href="<%= post.url %>" class="link"><%= post.title %></a></li>
+      <% } %>
+    </ul>
+
+    <br /><br />
+
+    <div>Subscribe via <a href="/blog/feed.xml" class="link">RSS</a> or follow me on <a href="https://twitter.com/soheilpro" class="link" target="_blank">Twitter</a> to get notifited of my new posts.</div>
+
+    <%- include('../_layout/footer') %>
+  </body>
+</html>
