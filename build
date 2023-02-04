@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+rebind build  --source-directory src  --output-directory out --delete-output-directory

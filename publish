@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+scp out/* root@soheilrashidi.com:/docker/nginx/data/var/www/com.soheilrashidi
